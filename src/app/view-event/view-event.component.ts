@@ -17,5 +17,9 @@ export class ViewEventComponent implements OnInit {
   ngOnInit() {
   }
 
+  delete(): void {
+    const eventId = this.event.id;
+    this.deleteEvent.emit(eventId);
+  }
 }
 
